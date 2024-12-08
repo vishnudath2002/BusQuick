@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Register from './components/Register';
-import Login from './components/Login';
+import Register from './pages/Register';
+import Loginpage from './pages/Loginpage';
 import Search from './components/Search';
-import Home from './components/Home';
+import Home from './pages/Home';
 import Navbar from './components/Navbar';
 
 const App = () => {
@@ -14,8 +14,7 @@ const App = () => {
         <Routes> 
           <Route path="/" exact element={<Home />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="/login" element={<Loginpage />} />
         </Routes>
       </div>
     </Router>
